@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function CreditCardFront() {
+export default function CreditCardFront(props) {
+  const {name,cardnumber,month,year} = props;
   return (
     <Container>
         <Circlecontainer>
@@ -10,10 +11,10 @@ export default function CreditCardFront() {
         </Circlecontainer>
 
         <CardDetailscontainer>
-            <Cardnumber>0000 0000 0000 0000</Cardnumber>
+            <Cardnumber>{cardnumber}</Cardnumber>
             <NameAndDateContainer>
-                <div>Akash</div>
-                <div>0/0</div> 
+                <div>{name}</div>
+                <div>{month}/{year}</div> 
             </NameAndDateContainer>
         </CardDetailscontainer>
     </Container>
@@ -23,7 +24,7 @@ export default function CreditCardFront() {
 const Container = styled.div`
   position: absolute;
   padding : 1rem;
-  top: 10rem;
+  top: 7rem;
   left: 11rem;
   width: 19rem;
   height: 10rem;
@@ -68,7 +69,8 @@ const Cardnumber = styled.div`
    font-size: 22px;
    font-weight: bold;
    text-align: center;
-   letter-spacing: 3px;
+   word-spacing: 9px;
+   letter-spacing: 1px;
 `
 const NameAndDateContainer = styled.div`
   font-size: 10px;

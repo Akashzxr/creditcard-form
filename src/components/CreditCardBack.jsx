@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components';
 
-function CreditCardBack() {
+function CreditCardBack(props) {
+  const {cvc} = props;
   return (
     <Container>
        <Blackstrip/>
        <DetailsContainer>
-          <CvcNumber>000</CvcNumber>
+          <CvcNumber>{cvc}</CvcNumber>
        </DetailsContainer>
 
        <LinesContainer>
@@ -35,7 +36,7 @@ function CreditCardBack() {
 
 const Container = styled.div`
   position: absolute;
-  top: 24rem;
+  top: 21rem;
   left: 14rem;
   width: 22rem;
   height: 13rem;
