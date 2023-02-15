@@ -38,6 +38,12 @@ const AppContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 600px){
+    flex-direction: column;
+    height: 100vh;
+    
+  }
 `
 
 export default App

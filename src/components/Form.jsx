@@ -46,6 +46,12 @@ const FormContainer = styled.form`
   margin: 1rem;
   justify-content: center;
   margin-right: 15%;
+  @media (max-width: 600px){
+    padding: 10%;
+    padding-left: 5%;
+    margin: 0;
+    margin-bottom: 11%;
+  }
 `
 const Label = styled.label`
   font-size: 12px;
@@ -66,6 +72,11 @@ const Input = styled.input`
   &:focus{
     outline-color: #9fd99f;
   }
+
+  @media (max-width: 600px){
+    width: 100%;
+    height: 2.7rem;
+  }
 `
 const MonthYearContainer = styled.div`
   display: flex;
@@ -78,6 +89,9 @@ const DateCvcContainer = styled.div`
 const Button = styled.button`
   background-color: #220930;
   color: white;
-  
+  @media (max-width: 600px){
+    margin-left: 16px
+    padding: 5%;
+  }
 `
 export default Form

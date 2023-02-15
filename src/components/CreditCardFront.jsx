@@ -26,7 +26,7 @@ const Container = styled.div`
   padding : 1rem;
   top: 7rem;
   left: 11rem;
-  width: 19rem;
+  width: 16rem;
   height: 10rem;
   border-radius: 7px;
   background-image: linear-gradient(137deg, #6248ff 0%,#c94ec7 20%,#598fe7 ,#650992);
@@ -35,6 +35,14 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   color: white;
+
+  @media (max-width: 600px){
+    top: 10rem;
+    left: 1rem;
+    width: 15rem;
+    z-index: 1;
+    height: 8rem;
+  }
 }
 `;
 
@@ -71,6 +79,10 @@ const Cardnumber = styled.div`
    text-align: center;
    word-spacing: 9px;
    letter-spacing: 1px;
+   @media (max-width: 600px){
+    font-size: 19px;
+    word-spacing: 1px;
+  }
 `
 const NameAndDateContainer = styled.div`
   font-size: 10px;

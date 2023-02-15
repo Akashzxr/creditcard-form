@@ -47,6 +47,12 @@ const Container = styled.div`
   color: white;
   gap: 20px;
   box-shadow: 90px 64px 130px -60px #585858;
+  @media (max-width: 600px){
+    top: 2rem;
+    left: 4rem;
+    width: 17rem;
+    height: 10rem;
+  }
 }
 `;
 
