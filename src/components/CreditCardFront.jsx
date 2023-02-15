@@ -74,10 +74,10 @@ const CardDetailscontainer = styled.div`
 `
 
 const Cardnumber = styled.div`
-   font-size: 22px;
+   font-size: 21px;
    font-weight: bold;
    text-align: center;
-   word-spacing: 9px;
+   word-spacing: 1px;
    letter-spacing: 1px;
    @media (max-width: 600px){
     font-size: 19px;

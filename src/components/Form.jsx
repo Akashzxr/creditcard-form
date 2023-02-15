@@ -87,6 +87,8 @@ const MonthYearContainer = styled.div`
 const DateCvcContainer = styled.div`
   display: flex;
   gap: 15px;
+  display: flex;
+  align-items: center;
 `
 const Button = styled.button`
   background-color: #220930;
