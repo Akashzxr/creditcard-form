@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
 function Form(props) {
   const {setname,setcardnumber,setmonth,setyear,setcvc} = props;
 
@@ -8,12 +9,12 @@ function Form(props) {
     <FormContainer>
         <InputContainer>
           <Label>CARDHOLDER NAME</Label>
-          <Input placeholder='e.g.Jane Appleseed' width='21rem' onChange={e => setname(e.target.value)}/>
+          <Input placeholder='e.g.Jane Appleseed'  onChange={e => setname(e.target.value)}/>
         </InputContainer>
 
         <InputContainer>
           <Label>CARD NUMBER</Label>
-          <Input placeholder='e.g.1234 5678 9123 0000' width='21rem' onChange={e => setcardnumber(e.target.value)}/>
+          <Input placeholder='e.g.1234 5678 9123 0000' onChange={e => setcardnumber(e.target.value)}/>
         </InputContainer>
 
         <DateCvcContainer>
@@ -27,7 +28,7 @@ function Form(props) {
 
             <InputContainer>
               <Label>CVC</Label>
-              <Input placeholder='e.g.123' width='6rem' onChange={e => setcvc(e.target.value)}/>
+              <Input placeholder='e.g.123'  onChange={e => setcvc(e.target.value)}/>
             </InputContainer>
         </DateCvcContainer>
         
@@ -74,7 +75,8 @@ const Input = styled.input`
   }
 
   @media (max-width: 600px){
-    width: 100%;
+    
+    padding-left: 6px;
     height: 2.7rem;
   }
 `
@@ -90,7 +92,7 @@ const Button = styled.button`
   background-color: #220930;
   color: white;
   @media (max-width: 600px){
-    margin-left: 16px
+    
     padding: 5%;
   }
 `

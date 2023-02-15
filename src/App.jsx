@@ -3,7 +3,8 @@ import CreditCardFront from './components/CreditCardFront'
 import CreditCardBack from './components/CreditCardBack'
 import Form from './components/Form'
 import styled from 'styled-components'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
+
 
 function App() {
 
@@ -12,11 +13,7 @@ function App() {
   const [month,setmonth] = useState("0");
   const [year,setyear] = useState("0");
   const [cvc,setcvc] = useState("000");
-
-  useEffect(()=>{
-    console.log(name);
-  },[name])
-
+  
   return (
     <AppContainer>
        <Background/>
@@ -29,7 +26,8 @@ function App() {
              setcardnumber={setcardnumber}
              setmonth={setmonth}
              setyear={setyear}
-             setcvc={setcvc}/>
+             setcvc={setcvc}
+            />
     </AppContainer>
   )
 }
@@ -42,7 +40,6 @@ const AppContainer = styled.div`
   @media (max-width: 600px){
     flex-direction: column;
     height: 100vh;
-    
   }
 `
 
